@@ -1,0 +1,103 @@
+/*minicalc Style*/
+.container{
+	margin: 0 auto;
+	width: 18.2%;
+	padding: 3px;
+	font-size: 14px;
+}
+
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+.tooltext{
+	padding: 3px;
+	font-style: italic;
+	font-size: 12px;
+	color:  white;
+	font-weight: bold;
+}
+.math_button{
+	width:51px;
+	height:30px;
+	padding:5px;
+	margin: 10px 0px 1px 1px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+.calc{
+	background-color: #111111;
+	color: #ffffff;
+	border-radius: 10px;
+	border-width: 7px;
+	padding: 5px 0px 5px 5px;
+	border-color: #800000;
+}
+.calc_sect{
+	color: black;
+	width: 95%;
+	border: solid;
+	border-width: 1px;
+	border-radius: 4px;
+	padding: 4px;
+	border-color: white;
+	background-color: #333333;
+}
+.disp_pan{
+	width: 95%;
+	background-color: #dcdcdc;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+.input{
+	color: black;
+	width: 90%;
+	height: 20px;
+	font-size: 18px;
+	margin-left: 20px;
+	background-color: #dcdcdc;
+	border: none;
+}
+.result{
+	color: black;
+	width: 70%;
+	height: 30px;
+	font-size: 25px;
+	margin-left: 45px;
+	text-align: right;
+	background-color: #dcdcdc;
+	border: none;
+}
+/*Small screens */
+@media only screen and (max-width: 80em) {
+	.container{
+		width: 90%;
+	}
+	.math_button{
+		width:180px;
+		height:140px;
+		font-size: 50px;
+		border-radius: 20px;
+		margin: 10px;
+	}
+	.input{
+		height: 100px;
+		font-size: 50px;
+	}
+	.calc_sect, .disp_pan{
+		padding: 10px;
+		margin: 5px;
+	}
+	.disp_pan{
+		height: 200px;
+		border-radius: 20px;
+		margin-bottom: 20px;
+	}
+	.tooltext{
+		font-size: 50px;
+	}
+	.result{
+		font-size: 75px;
+		width: 95%;
+		height: 100px;
+		padding: 10px;
+	}
+} 

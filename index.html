@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/minicalc.css">
+    </head>
+    <body>
+        <form action = "" method = "" id="cal">
+            <fieldset class = "container calc">
+                <p class = "tooltext"><label for = "calculator">minicalc</label></p>
+                <div class = "disp_pan">
+                    <input type = "textbox" class = "input" id = "inputDisp" readonly>
+                    <input type = "textbox" class = "result" id = "outputDisp" readonly>
+                </div>
+                <div class = "calc_sect">
+                    <table>
+                        <tr>
+                            <td><input type = "button" class = "math_button" value = 'x&sup2;' onclick = "math_pow('sqr')"/></td>
+                            <td><input type = "button" class = "math_button" value = "&radic;x" onclick = "math_pow('sqrt')"/></td>
+                            <td><input type = "button" class = "math_button" value = "x&sup3;" onclick = "math_pow('cube')"/></td>
+                            <td><input type = "button" class = "math_button" value = "&divide;" onclick = "operator('/')"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type = "button" class = "math_button" value = "7" onclick = "digit(7)"></td>
+                            <td><input type = "button" class = "math_button" value = "8" onclick = "digit(8)"/></td>
+                            <td><input type = "button" class = "math_button" value = "9" onclick = "digit(9)"/></td>
+                            <td><input type = "button" class = "math_button" value = "&times;" onclick = "operator('x')"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type = "button" class = "math_button" value = "4" onclick = "digit(4)"/></td>
+                            <td><input type = "button" class = "math_button" value = "5" onclick = "digit(5)"/></td>
+                            <td><input type = "button" class = "math_button" value = "6" onclick = "digit(6)"/></td>
+                            <td><input type = "button" class = "math_button" value = "-" onclick = "operator('-')"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type = "button" class = "math_button" value = "1" onclick = "digit(1)"/></td>
+                            <td><input type = "button" class = "math_button" value = "2" onclick = "digit(2)"/></td>
+                            <td><input type = "button" class = "math_button" value = "3" onclick = "digit(3)"/></td>
+                            <td><input type = "button" class = "math_button" value = "+" onclick = "operator('+')"/></td>
+                        </tr>
+                        <tr>
+                            <td><input type = "button" class = "math_button" value = "%" onclick = "uni_char('%')"/></td>
+                            <td><input type = "button" class = "math_button" value = "0" onclick = "digit(0)"/></td>
+                            <td><input type = "button" class = "math_button" value = "." onclick = "uni_char('.')"/></td>
+                            <td><input type = "button" class = "math_button" value = "=" onclick = "equals()"/></td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </form>
+        <script src="js/minicalc.js"></script>
+    </body>
+</html>
