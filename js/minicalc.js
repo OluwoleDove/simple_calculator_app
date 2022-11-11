@@ -32,7 +32,7 @@ document.title = "Simple Calculator App";
 	function calculate(num_val, op_sig){
 		var k, result;
 		var p = 1;
-		var op_order = ['^', 'x', '/', '+', '-'];// remember to add square root algorithm
+		var op_order = ['^', 'x', '/', '+', '-', 'e-'];// remember to add square root algorithm
 
 		for (var i = 0; i<= op_order.length-1; i++) {
 			for (var j = 0; j <= op_sig.length-1; j++) {
@@ -205,9 +205,28 @@ document.title = "Simple Calculator App";
 	function equals(){
 		witsC.inVal = get_id("inputDisp");
 		witsC.outVal = get_id("outputDisp");
-		
+		let outputfix = "";
 		var equals = solve(witsC.inVal.value);
-		var check_decimal = string_occur(witsC.inVal.value, ".");
+		/*var check_decimal = string_occur(equals.toString(), ".");
+		if (check_decimal.length > 0){
+			let new_result = equals.split(".");
+			if (new_result[1][0] == 0){
+				//result less than 1
+				let count = 1;
+				for (let i = 0; i < new_result[1].length; i++) {
+					if(parseFloat(new_result[1][i]) == 0){
+						count += 1;
+					}
+					else{
+						outputfix += new_result[1][i];
+					}
+				}
+				count += outputfix.length - 1;
+				outputfix = outputfix[0] + '.' + parseFloat(outputfix[1,-1]);
+				//if(outputfix.length)
+				equals = outputfix + "E-" + count;
+			}
+		}*/
 
 		if(isNaN(equals))
 			witsC.outVal.value = "Invalid Input";

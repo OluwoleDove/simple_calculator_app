@@ -11,7 +11,7 @@
 	padding: 3px;
 	font-style: italic;
 	font-size: 12px;
-	color:  white;
+	color: #004464;
 	font-weight: bold;
 }
 .math_button{
@@ -20,15 +20,19 @@
 	padding:5px;
 	margin: 10px 0px 1px 1px;
 	font-weight: bold;
+	background: #dde1e7;
 	border-radius: 5px;
+	border-color: #dcdcdc;
+	box-shadow: -3px -3px 7px #ffffffb2,
+					3px 3px 5px rgba(94, 104, 121, 0.945);
 }
 .calc{
-	background-color: #111111;
+	background-color: #d8d5df;
 	color: #ffffff;
 	border-radius: 10px;
 	border-width: 7px;
-	padding: 5px 0px 5px 5px;
-	border-color: #800000;
+	padding: 5px 5px 5px 5px;
+	border-color: #0092d6;
 }
 .calc_sect{
 	color: black;
@@ -38,14 +42,16 @@
 	border-radius: 4px;
 	padding: 4px;
 	border-color: white;
-	background-color: #333333;
+	background-color: #ffffff;
 }
 .disp_pan{
 	width: 95%;
-	background-color: #dcdcdc;
+	background-color: #dde1e7;
 	border-radius: 5px;
 	margin-bottom: 5px;
 	padding: 5px;
+	box-shadow: inset -3px -3px 7px #ffffffb0,
+		inset 3px 3px 5px rgba(94, 104, 121, 0.692);
 }
 .input{
 	color: black;
@@ -53,7 +59,7 @@
 	height: 20px;
 	font-size: 18px;
 	margin-left: 20px;
-	background-color: #dcdcdc;
+	background-color: #dde1e7;
 	border: none;
 }
 .result{
@@ -63,7 +69,7 @@
 	font-size: 25px;
 	margin-left: 45px;
 	text-align: right;
-	background-color: #dcdcdc;
+	background-color: #dde1e7;
 	border: none;
 }
 /*Small screens */
